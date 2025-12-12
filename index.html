@@ -14,36 +14,53 @@
         }
 
         body {
-            background-color: #f5f5f5;
+            background: linear-gradient(120deg, #2980b9, #6dd5fa);
             color: #333;
             line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
         }
 
         .container {
             max-width: 900px;
-            margin: 40px auto;
+            margin: auto;
             background: #fff;
             padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
         }
 
-        h1, h2, h3 {
-            color: #2c3e50;
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            position: absolute;
+            top: -60px;
+            left: calc(50% - 60px);
+            background: #fff;
         }
 
         h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            color: #2c3e50;
         }
 
         h2 {
             font-size: 1.8em;
             margin-top: 30px;
             margin-bottom: 15px;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 3px solid #e67e22;
             display: inline-block;
             padding-bottom: 5px;
+            color: #e67e22;
         }
 
         h3 {
@@ -57,29 +74,34 @@
         }
 
         .profile, .contact-info, .skills, .experience, .education {
-            margin-bottom: 25px;
+            margin-bottom: 30px;
         }
 
         .contact-info div, .skills div {
             margin-bottom: 10px;
         }
 
+        .contact-info div span {
+            font-weight: bold;
+            color: #e67e22;
+        }
+
         .skills div span {
             display: inline-block;
-            background-color: #3498db;
+            background: #e67e22;
             color: #fff;
-            padding: 5px 10px;
-            border-radius: 20px;
+            padding: 5px 12px;
+            border-radius: 25px;
             margin: 5px 5px 0 0;
             font-size: 0.9em;
         }
 
         .experience-item, .education-item {
             margin-bottom: 20px;
-        }
-
-        .experience-item h3, .education-item h3 {
-            margin-bottom: 5px;
+            padding: 15px;
+            border-left: 5px solid #3498db;
+            background: #f9f9f9;
+            border-radius: 10px;
         }
 
         .experience-item span, .education-item span {
@@ -89,15 +111,26 @@
 
         footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
             font-size: 0.9em;
             color: #95a5a6;
         }
 
         /* Responsive */
         @media (max-width: 600px) {
-            .container {
-                padding: 20px;
+            header img {
+                top: -50px;
+                left: calc(50% - 50px);
+                width: 100px;
+                height: 100px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
             }
         }
     </style>
@@ -106,23 +139,24 @@
     <div class="container">
         <!-- Encabezado -->
         <header>
-            <h1>Deivid Casa</h1>
+            <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Foto de perfil">
+            <h1>Deivid Stalin Casa Mendoza</h1>
             <p><em>Desarrollador | Diseñador | Profesional Creativo</em></p>
         </header>
 
         <!-- Perfil -->
         <section class="profile">
             <h2>Perfil</h2>
-            <p>Profesional con experiencia en el area de Sistemas, Desarrollo Web, Redes, Aplicaciones Moviles, Metodologias, enfocado en la entrega de soluciones innovadoras y eficientes. Con habilidades en python, C#, Django, Larabel, Linux, .Net, Java, BI y pasión por el aprendizaje continuo.</p>
+            <p>Profesional con experiencia en el área de Sistemas, Desarrollo Web, Redes, Aplicaciones Móviles y Metodologías ágiles, enfocado en la entrega de soluciones innovadoras y eficientes. Con habilidades en Python, C#, Django, Laravel, Linux, .Net, Java, BI y pasión por el aprendizaje continuo.</p>
         </section>
 
         <!-- Contacto -->
         <section class="contact-info">
             <h2>Contacto</h2>
-            <div>Email: deivid.casamendoza@gmail.com</div>
-            <div>Teléfono: +593 995601560</div>
-            <div>LinkedIn: linkedin.com/in/tuusuario</div>
-            <div>GitHub: github.com/tuusuario</div>
+            <div><span>Email:</span> deivid.casamendoza@gmail.com</div>
+            <div><span>Teléfono:</span> +593 995601560</div>
+            <div><span>LinkedIn:</span> linkedin.com/in/tuusuario</div>
+            <div><span>GitHub:</span> github.com/tuusuario</div>
         </section>
 
         <!-- Experiencia -->
@@ -144,7 +178,7 @@
         <section class="education">
             <h2>Educación</h2>
             <div class="education-item">
-                <h3>Ingenieria en Sistemas - Universidad Tecnica de Cotopaxi</h3>
+                <h3>Ingeniería en Sistemas - Universidad Técnica de Cotopaxi</h3>
                 <span>2020 - 2026</span>
                 <p>Formación en desarrollo de software, bases de datos, redes y seguridad informática.</p>
             </div>
