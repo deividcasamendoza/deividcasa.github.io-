@@ -1,1 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - [Tu Nombre]</title>
+    <style>
+        /* Reset y tipografía */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
 
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            color: #2980b9;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        .profile, .contact-info, .skills, .experience, .education {
+            margin-bottom: 25px;
+        }
+
+        .contact-info div, .skills div {
+            margin-bottom: 10px;
+        }
+
+        .skills div span {
+            display: inline-block;
+            background-color: #3498db;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 20px;
+            margin: 5px 5px 0 0;
+            font-size: 0.9em;
+        }
+
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .experience-item h3, .education-item h3 {
+            margin-bottom: 5px;
+        }
+
+        .experience-item span, .education-item span {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1>[Tu Nombre]</h1>
+            <p><em>Desarrollador | Diseñador | Profesional Creativo</em></p>
+        </header>
+
+        <!-- Perfil -->
+        <section class="profile">
+            <h2>Perfil</h2>
+            <p>Profesional con experiencia en [tu área], enfocado en la entrega de soluciones innovadoras y eficientes. Con habilidades en [habilidades clave] y pasión por el aprendizaje continuo.</p>
+        </section>
+
+        <!-- Contacto -->
+        <section class="contact-info">
+            <h2>Contacto</h2>
+            <div>Email: tuemail@ejemplo.com</div>
+            <div>Teléfono: +593 9XX XXX XXX</div>
+            <div>LinkedIn: linkedin.com/in/tuusuario</div>
+            <div>GitHub: github.com/tuusuario</div>
+        </section>
+
+        <!-- Experiencia -->
+        <section class="experience">
+            <h2>Experiencia</h2>
+            <div class="experience-item">
+                <h3>Desarrollador Web - Empresa XYZ</h3>
+                <span>2022 - Presente</span>
+                <p>Desarrollo de aplicaciones web usando tecnologías como HTML, CSS, JavaScript y frameworks modernos. Implementación de soluciones escalables y optimización de rendimiento.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Asistente de TI - Empresa ABC</h3>
+                <span>2020 - 2022</span>
+                <p>Mantenimiento y soporte de sistemas internos, instalación de software y mejora de procesos internos para aumentar la eficiencia del equipo.</p>
+            </div>
+        </section>
+
+        <!-- Educación -->
+        <section class="education">
+            <h2>Educación</h2>
+            <div class="education-item">
+                <h3>Licenciatura en Informática - Universidad DEF</h3>
+                <span>2016 - 2020</span>
+                <p>Formación en desarrollo de software, bases de datos, redes y seguridad informática.</p>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section class="skills">
+            <h2>Habilidades</h2>
+            <div>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>Django</span>
+                <span>Git</span>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            &copy; 2025 [Tu Nombre]. Todos los derechos reservados.
+        </footer>
+    </div>
+</body>
+</html>
